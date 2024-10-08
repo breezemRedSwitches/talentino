@@ -16,6 +16,7 @@ const PrimaryButton: React.FC<ButtonProps> = ({ bgColor, textColor, hoverColor, 
       style={{
         backgroundColor: bgColor,
         color: textColor,
+        borderRadius: '10px 40px 10px 10px',
         transition: 'opacity 0.3s',
       }}
       onMouseEnter={(e) => (hoverColor ? (e.currentTarget.style.backgroundColor = hoverColor) : null)}
