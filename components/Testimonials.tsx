@@ -3,7 +3,8 @@ import Image from 'next/image';
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="bg-[#eafaf6] py-16 text-center">
+    <section className="bg-[#eafaf6] py-16 text-center ">
+      <div className='max-container'>
       <h2 className="text-2xl md:text-3xl font-semibold text-[#090015] mb-8">
         What Our Early Users Are Saying?
       </h2>
@@ -12,7 +13,7 @@ const Testimonials: React.FC = () => {
         
         <div className="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
           <Image
-            src="/images/user_1.png"
+            src="/user_1.png"
             alt="User 1"
             width={50}
             height={50}
@@ -25,7 +26,7 @@ const Testimonials: React.FC = () => {
 
         <div className="bg-[#7CE7E2] p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
           <Image
-            src="/images/user_1.png" 
+            src="/user_1.png" 
             alt="User 2"
             width={50}
             height={50}
@@ -38,7 +39,7 @@ const Testimonials: React.FC = () => {
 
         <div className="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
           <Image
-            src="/images/user_1.png"
+            src="/user_1.png"
             alt="User 3"
             width={50}
             height={50}
@@ -49,6 +50,8 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
       </div>
+      </div>
+    
     </section>
   );
 };

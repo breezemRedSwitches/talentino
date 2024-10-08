@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import PrimaryButton from "./PrimaryButton";
 const Footer = () => {
   return (
     <footer className="section-bg-dark">
@@ -18,11 +19,19 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <button className="bg-white">Get Early Access</button>
+            <div className="flex justify-center items-center">
+              <PrimaryButton
+                bgColor="#00F2FF"
+                textColor="#090015"
+                hoverColor="#00D1E0"
+              >
+                Get Early Access
+              </PrimaryButton>
+            </div>
           </div>
         </div>
         <div className="w-full h-[1px] bg-semi-white my-8"></div>
-        {/* second section start */}
+
         <div className="py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
@@ -111,7 +120,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/* second section end */}
       </div>
     </footer>
   );
