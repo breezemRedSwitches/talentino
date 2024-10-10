@@ -1,123 +1,101 @@
-import React from "react";
-import Image from "next/image";
-import PrimaryButton from "./PrimaryButton";
-const Footer = () => {
+'use client';
+
+import React from 'react';
+import PrimaryButton from './PrimaryButton';
+import Image from 'next/image';
+
+const Footer: React.FC = () => {
   return (
-    <footer className="section-bg-dark">
-      <div className="max-container flex flex-col py-5">
-        <div className="flex flex-col justify-between items-start gap-3 md:items-center md:flex-row px-4">
-          <div className="flex flex-col max-w-[750px]">
-            <h2 className="text-white text-[42px] leading-[50px] font-normal">
+    <footer className="bg-[#090015] text-white py-10 md:py-16 px-4">
+      <div className="max-w-6xl mx-auto">
+       
+        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+          <div className="text-center md:text-left mb-6 md:mb-0">
+            <h1 className="text-2xl md:text-4xl font-bold leading-tight">
               Join the Future of Hiring with Talentino.ai
-            </h2>
-            <p className="text-white text-[14px] font-normal py-3">
-              Be among the first to experience the power of AI-driven
-              recruitment. Sign up for early access and get exclusive updates as
-              we prepare to launch this fall.Be among the first to experience
-              the power of AI-driven recruitment. Sign up for early access and
-              get exclusive updates as we prepare to launch this fall.
+            </h1>
+            <p className="text-[#B0BEC5] mt-4 max-w-lg text-sm md:text-base mx-auto md:mx-0">
+              Be among the first to experience the power of AI-driven recruitment. Sign up for early access and get exclusive updates as we prepare to launch this fall.
             </p>
           </div>
+
+          
           <div>
-            <div className="flex justify-center items-center">
-              <PrimaryButton
-                bgColor="#00F2FF"
-                textColor="#090015"
-                hoverColor="#00D1E0"
-              >
-                Get Early Access
-              </PrimaryButton>
+            <PrimaryButton bgColor="#00F2FF" textColor="#090015" hoverColor="#00D1E0">
+              Get Early Access
+            </PrimaryButton>
+          </div>
+        </div>
+
+        
+        <div className="border-t border-gray-700 pt-10 flex flex-col md:flex-row justify-between space-y-10 md:space-y-0">
+       
+          <div className="flex flex-col items-center md:items-start space-y-6">
+            <Image src="/logo.svg" alt="Logo" width={126} height={24} />
+            <h3 className="text-lg my-3 text-center md:text-left">Subscribe to newsletter</h3>
+            <div className="flex items-center bg-[#1F1630] p-1 rounded-full w-full max-w-sm">
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="flex-1 bg-transparent text-white placeholder-gray-400 px-4 py-2 focus:outline-none"
+              />
+              <button className="bg-[#00F2FF] text-[#090015] font-medium py-2 px-4 rounded-full">
+                Get started
+              </button>
+            </div>
+
+          
+            <div className="flex space-x-4 mt-4 justify-center md:justify-start">
+              <a href="#"><img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" /></a>
+              <a href="#"><img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6" /></a>
+              <a href="#"><img src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" /></a>
+              <a href="#"><img src="/icons/x.svg" alt="X" className="w-6 h-6" /></a>
+            </div>
+          </div>
+
+          
+          <div className="flex justify-between w-full md:w-auto space-x-6 md:space-x-12">
+            
+            <div>
+              <h3 className="text-lg font-bold mb-4">Product</h3>
+              <ul className="space-y-2 text-[#B0BEC5] text-sm">
+                <li><a href="#">Chatbot</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Sign in</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+
+           
+            <div>
+              <h3 className="text-lg font-bold mb-4">Company</h3>
+              <ul className="space-y-2 text-[#B0BEC5] text-sm">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+
+            
+            <div>
+              <h3 className="text-lg font-bold mb-4">Contact Info</h3>
+              <ul className="space-y-2 text-[#B0BEC5] text-sm">
+                <li>📞 +92 28 27 09 89</li>
+                <li>✉️ contact@Hire.com</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div className="w-full h-[1px] bg-semi-white my-8"></div>
 
-        <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <div className="text-white font-bold text-xl">
-                <Image src="/logo.svg" alt="Logo" width={126} height={24} />
-                <p className="text-lg">Subscribe to newsletter</p>
-              </div>
-              <form className="relative flex h-10 w-full min-w-[200px] max-w-[24rem]">
-                <button
-                  className="!absolute right-1 top-1 z-10 select-none rounded bg-pink-500 py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none peer-placeholder-shown:pointer-events-none peer-placeholder-shown:bg-blue-gray-500 peer-placeholder-shown:opacity-50 peer-placeholder-shown:shadow-none"
-                  type="button"
-                  data-ripple-light="true"
-                >
-                  Invite
-                </button>
-                <input
-                  type="email"
-                  className="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5 pr-20 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-pink-500 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
-                  placeholder="Your email address"
-                  required
-                />
-              </form>
-            </div>
-            <div className="space-y-2 text-white md:flex md:justify-center md:flex-col md:items-center">
-              <p className="font-bold text-lg">Product</p>
-              <ul className="space-y-1">
-                <li>
-                  <a href="#" className="hover:underline">
-                    Chatbot
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Sign in
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Sign Up
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Support
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-2 text-white">
-              <p className="font-bold text-lg">Company</p>
-              <ul className="space-y-1">
-                <li>
-                  <a href="#" className="hover:underline">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Blog
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-2 text-white">
-              <p className="font-bold text-lg">Contact Info</p>
-              <ul className="space-y-1">
-                <li className="flex items-center">
-                  <Image src="/phone.svg" alt="Phone" width={16} height={24} />
-                  <span>+92 28 27 09 89</span>
-                </li>
-                <li className="flex items-center">
-                  <Image src="/email.svg" alt="Email" width={16} height={24} />
-                  <span>contact@hire.com</span>
-                </li>
-              </ul>
-            </div>
+        
+        <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p className="text-xs text-[#B0BEC5] text-center md:text-left">
+            © 2024 talentino. Created with love by <span className="text-red-400">RedSwitches</span>
+          </p>
+          <div className="flex space-x-4 text-xs text-center">
+            <a href="#" className="text-[#B0BEC5]">Terms & Conditions</a>
+            <a href="#" className="text-[#B0BEC5]">Privacy Policy</a>
           </div>
         </div>
       </div>
