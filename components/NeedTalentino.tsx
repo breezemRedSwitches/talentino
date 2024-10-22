@@ -1,18 +1,22 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 const WhyTalentino: React.FC = () => {
   return (
-    <section className="bg-[#090015] text-white py-16 px-4">
+    <section
+      className="bg-[#1A1A2E] text-white py-16 px-4 bg-cover bg-center md:bg-cover md:bg-center"
+      style={{
+        backgroundImage: "url('/need_talentino_background.png')", 
+      }}
+    >
       <div className="max-container">
         <div className="py-8 px-4 text-center relative">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-bold text-white">
               Why You Need Talentino.ai?
             </h1>
-
             <p className="mt-4 text-lg md:text-xl text-[#B0BEC5]">
               Dealing with resume overload and lengthy role assessments?
               Talentino.ai makes the hiring process quicker, smarter, and
@@ -39,36 +43,15 @@ const WhyTalentino: React.FC = () => {
             </p>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Reduce manual data entry by up to 90%</span>
               </li>
               <li className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Collect all candidate information in one system</span>
               </li>
               <li className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Focus on finding the right talent</span>
               </li>
             </ul>
@@ -118,36 +101,15 @@ const WhyTalentino: React.FC = () => {
             </p>
             <ul className="space-y-2 mt-4">
               <li className="flex items-start space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Save up to 70% of time on resume reviews</span>
               </li>
               <li className="flex items-start space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Receive summarized candidate profiles</span>
               </li>
               <li className="flex items-start space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Ensure only the most qualified proceed</span>
               </li>
             </ul>
@@ -171,36 +133,15 @@ const WhyTalentino: React.FC = () => {
             </p>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Reduce manual data entry by up to 90%</span>
               </li>
               <li className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Collect all candidate information in one system</span>
               </li>
               <li className="flex items-center space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Focus on finding the right talent</span>
               </li>
             </ul>
@@ -249,36 +190,15 @@ const WhyTalentino: React.FC = () => {
             </p>
             <ul className="space-y-2 mt-4">
               <li className="flex items-start space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Save up to 70% of time on resume reviews</span>
               </li>
               <li className="flex items-start space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Receive summarized candidate profiles</span>
               </li>
               <li className="flex items-start space-x-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                  className="w-5 h-5 text-[#00F2FF]"
-                >
-                  <path d="M8 0a8 8 0 1 0 16 8 8 8 0 0 0-16 0zm6.354-2.354L7.707 9.293l-2.854-2.854a1 1 0 0 0-1.414 1.414l3.5 3.5a1 1 0 0 0 1.414 0l6.5-6.5a1 1 0 1 0-1.414-1.414z" />
-                </svg>
+                <Image src="/blue_tick.svg" alt="Blue tick" width={20} height={20} />
                 <span>Ensure only the most qualified proceed</span>
               </li>
             </ul>
