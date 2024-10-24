@@ -1,9 +1,7 @@
-'use client';
-
 import React from 'react';
 import PrimaryButton from './PrimaryButton';
 
-const HeroSection: React.FC = () => {
+const HeroSection = () => {
   return (
     <section 
       className="bg-[#090015] text-white py-12 md:py-20 px-4 text-center bg-[#1A1A2E] md:bg-cover md:bg-center md:bg-none flex items-end"  // Use Flexbox to align the content at the bottom

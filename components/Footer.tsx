@@ -1,10 +1,10 @@
-'use client';
+
 
 import React from 'react';
 import PrimaryButton from './PrimaryButton';
 import Image from 'next/image';
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className="bg-[#090015] text-white py-10 md:py-16 px-4">
       <div className="max-w-6xl mx-auto">
@@ -46,10 +46,10 @@ const Footer: React.FC = () => {
 
           
             <div className="flex space-x-4 mt-4 justify-center md:justify-start">
-              <a href="#"><img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" /></a>
-              <a href="#"><img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6" /></a>
-              <a href="#"><img src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" /></a>
-              <a href="#"><img src="/icons/x.svg" alt="X" className="w-6 h-6" /></a>
+              <a href="#"><Image src="/facebook.svg" alt="Facebook" width={24} height={24} /></a>
+              <a href="#"><Image src="/instagram.svg" alt="Instagram" width={24} height={24} /></a>
+              <a href="#"><Image src="/linkedin.svg" alt="LinkedIn" width={24} height={24} /></a>
+              <a href="#"><Image src="/x.svg" alt="X" width={24} height={24} /></a>
             </div>
           </div>
 

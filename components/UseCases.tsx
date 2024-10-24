@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const UseCases: React.FC = () => {
+const UseCases = () => {
   return (
     <section className="py-12 bg-white text-center max-container">
       <h2 className="text-3xl md:text-4xl font-semibold text-[#090015] mb-6">

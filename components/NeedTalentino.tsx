@@ -1,9 +1,7 @@
-'use client';
-
 import React from 'react';
 import Image from 'next/image';
 
-const WhyTalentino: React.FC = () => {
+const WhyTalentino = () => {
   return (
     <section
       className="bg-[#1A1A2E] text-white py-16 px-4 bg-cover bg-center md:bg-cover md:bg-center"
@@ -26,7 +24,6 @@ const WhyTalentino: React.FC = () => {
         </div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Text comes first on mobile */}
           <div className="space-y-6">
             <div className="text-left">
               <h3 className="text-[#00F2FF] font-medium text-base">
@@ -57,7 +54,6 @@ const WhyTalentino: React.FC = () => {
             </ul>
           </div>
 
-          {/* Image appears below text on mobile */}
           <div className="flex justify-center md:justify-end items-center">
             <div className="relative w-full h-64 md:h-auto">
               <Image
@@ -165,7 +161,7 @@ const WhyTalentino: React.FC = () => {
           <div className="flex justify-center md:justify-end items-center">
             <div className="relative w-full h-64 md:h-auto">
               <Image
-                src="/need_talentino_2.png"
+                src="/need_talentino_4.png"
                 alt="Talentino illustration"
                 layout="responsive"
                 width={600}

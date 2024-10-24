@@ -1,10 +1,8 @@
-'use client';
-
 import React from 'react';
 import PrimaryButton from './PrimaryButton';
 import Image from 'next/image';
 
-const WelcomeSection: React.FC = () => {
+const WelcomeSection = () => {
   return (
     <section className="bg-[#EAF5F4] text-center py-12 md:py-16 px-4">
       <div className="max-w-3xl lg:max-w-4xl mx-auto">
@@ -13,7 +11,6 @@ const WelcomeSection: React.FC = () => {
           Welcome to <span className="text-[#00A5FF]">Talentino.ai</span>
         </h1>
 
-     
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-[#1B1B1B] mb-6">
           The Future of Hiring
         </h2>

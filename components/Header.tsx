@@ -1,11 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 
-// Dynamically import the MobileMenu only on the client
-const MobileMenu = dynamic(() => import("./MobileMenu"), { ssr: false });
-
-const Header: React.FC = () => {
+const Header = () => {
   const navLinks = [
     { href: "#", label: "Features" },
     { href: "#", label: "Pricing" },
@@ -17,6 +13,7 @@ const Header: React.FC = () => {
   return (
     <header className="bg-[#090015] text-white">
       <div className="max-container mx-auto px-4 py-4 flex justify-between items-center">
+       
         <div className="flex items-center space-x-2">
           <div className="w-24 md:w-32 lg:w-40 h-auto">
             <Image
@@ -29,10 +26,7 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-     
-        <MobileMenu links={navLinks} />
-
- 
+       
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="hover:text-gray-400">
